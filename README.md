@@ -36,7 +36,7 @@ $dsn = "mysql:host={$host};port={$port};dbname={$dbname};";
 $options = [
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
 ];
-$connection = new PDO($dsn, $login, $password);
+$connection = new PDO($dsn, $login, $password, $options);
 ```
 
 - При необходимости измените данные на _свои_.  
